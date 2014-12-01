@@ -1,0 +1,65 @@
+#cabecalho{
+	margin-left: 23%;
+	 width: 1120px;
+}
+
+#imgifms{
+	float: left;
+}
+
+#textoifms{
+	float: left;
+	font-weight: bold;
+}
+
+
+#content, h2{
+	background-color: #e4e4e4;
+	border-radius: 5px; 
+}
+
+#linktopo{
+	color: white;
+}
+#menu{
+	width: auto;
+	height: auto;
+	float: left;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#menu nav ul li{
+	list-style: none;
+}
+
+#menu nav ul li a{
+	list-style: none;
+	color: #66cc00;
+	font-family: Arial; 
+	font-size: 16px;
+}
+
+#menu nav ul li a:hover{
+	text-decoration: none;
+	color: white;
+
+}
+
+#rodape{
+	background-color: #737373;
+}
+
+#footer{
+	float: right;
+	font: bold;
+}
+
+#contorno{
+	width: 1120px;
+	border: 2px solid black;
+	border-radius: 7px;
+}
+
+a#add, .del{
+	cursor: pointer;
+}
