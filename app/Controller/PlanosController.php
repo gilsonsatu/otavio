@@ -59,9 +59,10 @@ class PlanosController extends AppController {
 				$this->Session->setFlash(__('Falha ao salvar o plano de ensino, tente novamente!'), 'erro');
 			}
 		}
+                $curso_id = -1;
 		$instrumentos = $this->Plano->Instrumento->find('list', array('fields' => array('instrumentoDescricao')));
 		$cursos = $this->Plano->Curso->find('list', array('fields' => array('cursoDescricao')));
-		$disciplinas = $this->Plano->Disciplina->find('list', array('conditions' => array('Disciplina.Id' => $disciplina_id),'fields' => array('disciplinaDescricao')));
+		$disciplinas = $this->Plano->Disciplina->find('list', array('conditions' => array('Disciplina.curso_id' => $curso_id),'fields' => array('disciplinaDescricao')));
 		$this->set(compact('instrumentos', 'disciplinas', 'cursos'));
 	}
 
